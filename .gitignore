@@ -1,0 +1,45 @@
+# MacOS specific files
+.DS_Store
+
+# Go binary and object files
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Go build artifacts
+bin/
+obj/
+
+# Go workspace specific files
+/go.work
+/go.work.sum
+
+# Go module cache
+# Go modules will cache dependencies in the local module cache
+# You can keep it to avoid rebuilding them.
+# However, it's safe to add it to .gitignore if you don't want it tracked.
+# Uncomment the line below if you don't want to track Go modules cache
+# /pkg/mod/
+
+# Go vendor directory
+/vendor/
+
+# Go test output
+*.test
+
+# Coverage files
+coverage.out
+
+# IDE or Editor specific files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Log files
+*.log
+
+# Temporary files
+*.tmp
