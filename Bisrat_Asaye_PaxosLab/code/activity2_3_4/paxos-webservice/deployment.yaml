@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: paxos-web-service
+spec:
+  replicas: 3  # Number of replicas (Pods) of your service
+  selector:
+    matchLabels:
+      app: paxos-web-service
+  template:
+    metadata:
+      labels:
+        app: paxos-web-service
+    spec:
+      containers:
+      - name: paxos-web-service
+        image: bisratplus/paxos-webservice:latest  # Docker image name
+        ports:
+        - containerPort: 8080  # The port your app is exposed on inside the container
